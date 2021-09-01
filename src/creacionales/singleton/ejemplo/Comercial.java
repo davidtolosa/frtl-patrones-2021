@@ -18,7 +18,7 @@ public class Comercial {
 	}
 	
 	private Comercial(String pNombre, String pDireccion, String pEmail) {
-		System.out.println("-----SE CREO UN OBJETO----");
+		System.out.println("SE CREO  OBJETO-");
 	    nombre = pNombre;
 	    direccion = pDireccion;
 		email = pEmail; 
