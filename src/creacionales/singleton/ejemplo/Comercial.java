@@ -8,17 +8,20 @@ public class Comercial {
 	
 	private static Comercial _instance = null;
 	
-	public static Comercial Instance() {
+	public static Comercial Instance(String nombre, String direccion, String email) {
 		if (_instance == null)
 		{
-			_instance = new Comercial();
+			_instance = new Comercial(nombre, direccion, email);
 		}
 			
 		return _instance;
 	}
 	
-	private Comercial() {
+	private Comercial(String pNombre, String pDireccion, String pEmail) {
 		System.out.println("-----SE CREO UN OBJETO----");
+	    nombre = pNombre;
+	    direccion = pDireccion;
+		email = pEmail; 
 	}
 
 	public String getNombre() {
