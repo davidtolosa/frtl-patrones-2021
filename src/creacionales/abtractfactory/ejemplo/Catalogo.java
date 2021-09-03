@@ -10,14 +10,17 @@ public class Catalogo {
 		
 		FabricaVehiculo fabrica;
 		
-		System.out.print("Desea utilizar " + "vehiculos electricos (1) o a gasolina (2):");
+		System.out.print("Desea utilizar " + "vehiculos electricos (1) a gasolina (2) o hibrido (3):");
 		String eleccion = reader.next();
 		
 		if (eleccion.equals("1")) {
 			fabrica = new FabricaVehiculoElectricidad();
-		} else {
+		} else if (eleccion.equals("2"))  {
 			fabrica = new FabricaVehiculoGasolina();
+		}else {
+			fabrica = new FabricaVehiculoHibrido();
 		}
+			
 		
 		Automovil auto = fabrica.creaAutomovil("Peugeot", "Blanco", 100, 200);
 		Scooter scooter = fabrica.creaScooter("Yamaha", "Azul", 200);
