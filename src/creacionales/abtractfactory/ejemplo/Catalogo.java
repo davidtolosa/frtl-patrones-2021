@@ -21,9 +21,11 @@ public class Catalogo {
 		
 		Automovil auto = fabrica.creaAutomovil("Peugeot", "Blanco", 100, 200);
 		Scooter scooter = fabrica.creaScooter("Yamaha", "Azul", 200);
+		Camion camion = fabrica.crearCamion("Scania", "Negro", 8);
 		
 		auto.mostrarCaracteristicas();
 		scooter.mostrarCaracteristicas();
+		camion.mostrarCaracteristicas();
 	}
 
 }

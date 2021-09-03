@@ -9,4 +9,8 @@ public class FabricaVehiculoElectricidad implements FabricaVehiculo {
 	public Scooter creaScooter(String modelo, String color, int potencia) {
 		return new ScooterElectricidad(modelo, color, potencia);
 	}
+
+	public Camion crearCamion(String modelo, String color, int ejes) {
+		return new CamionElectricidad(modelo, color, ejes);
+	}
 }
