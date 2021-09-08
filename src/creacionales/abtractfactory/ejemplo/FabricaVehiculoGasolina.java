@@ -14,4 +14,9 @@ public class FabricaVehiculoGasolina implements FabricaVehiculo {
 	public Camion crearCamion(String modelo, String color, int ejes) {
 		return new CamionGasolina(modelo, color, ejes);
 	}
+
+	@Override
+	public Camioneta creaCamioneta(String modelo, String color, int potencia, double espacio) {
+		return new CamionetaGasolina(modelo, color, potencia, espacio);
+	}
 }

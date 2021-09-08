@@ -17,4 +17,9 @@ public class FabricaVehiculoHibrido implements FabricaVehiculo {
 		return new CamionHibrido(modelo, color, ejes);
 	}
 
+	@Override
+	public Camioneta creaCamioneta(String modelo, String color, int potencia, double espacio) {
+		return new CamionetaHibrido(modelo, color, potencia, espacio);
+	}
+
 }
