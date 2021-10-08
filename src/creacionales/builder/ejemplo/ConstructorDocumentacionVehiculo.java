@@ -6,6 +6,8 @@ public abstract class ConstructorDocumentacionVehiculo {
 	public abstract void construyeSolicitudPedido(String nombreCliente);
 
 	public abstract void construyeSolicitudMatriculacion(String nombreSolicitante);
+	
+	public abstract void construyeSolicitudEntrega(String nombreSolicitante);
 
 	public Documentacion resultado() {
 		return documentacion;

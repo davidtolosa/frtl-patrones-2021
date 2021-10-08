@@ -18,4 +18,11 @@ public class ConstructorDocumentacionVehiculoPdf extends ConstructorDocumentacio
 		documentacion.agregaDocumento(documento);
 	}
 
+	@Override
+	public void construyeSolicitudEntrega(String nombreSolicitante) {
+		String documento;
+		documento = "<PDF>Solicitud de Entrega: " + nombreSolicitante + "</PDF>";
+		documentacion.agregaDocumento(documento);		
+	}
+
 }

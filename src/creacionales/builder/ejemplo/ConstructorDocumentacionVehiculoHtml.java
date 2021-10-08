@@ -17,4 +17,11 @@ public class ConstructorDocumentacionVehiculoHtml extends ConstructorDocumentaci
 		documento = "<HTML>Solicitud de matriculacion Solicitante: " + nombreSolicitante + "</HTML>";
 		documentacion.agregaDocumento(documento);
 	}
+
+	@Override
+	public void construyeSolicitudEntrega(String nombreSolicitante) {
+		String documento;
+		documento = "<HTML>Solicitud de Entrega: " + nombreSolicitante + "</HTML>";
+		documentacion.agregaDocumento(documento);		
+	}
 }
