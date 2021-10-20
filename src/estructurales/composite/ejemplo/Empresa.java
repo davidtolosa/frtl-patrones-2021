@@ -1,4 +1,4 @@
-package estructurales.composite;
+package estructurales.composite.ejemplo;
 
 public abstract class Empresa {
 	protected static double costeUnitarioVehiculo = 5.0;

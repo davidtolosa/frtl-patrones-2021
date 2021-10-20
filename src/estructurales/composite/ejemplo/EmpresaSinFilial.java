@@ -1,4 +1,4 @@
-package estructurales.composite;
+package estructurales.composite.ejemplo;
 
 public class EmpresaSinFilial extends Empresa {
 
